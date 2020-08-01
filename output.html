@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="aneesh.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="realcode.js"></script>
+    <title>Aneesh IGCSE Task</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card-panel orange"> <div class="center"><h3><strong>Checkout</strong></h3></div></div>
+        <div class="card-panel white">
+            <div id='results'>
+                <div class="divider"></div>
+                <div class="section">
+                    <h5><strong>Phone</strong></h5>
+                    <p id='phone'> <strong>Selections: </strong> {{phone_name}}</p>
+                </div>
+                <div class="divider"></div>
+                <div class="section">
+                    <h5> <strong>Tablet</strong></h5>
+                    <p id='tablet'><strong>Selections: </strong> {{tablet_name}}</p>
+                </div>
+                <div class="divider"></div>
+                <div class="section">
+                    <h5><strong>Sim</strong></h5>
+                    <p id="sim"> <strong>Sim:</strong> {{sim}}</p>
+                    <p id="simPrice"> <strong>Price: </strong> {{simPrice}}$</p>
+                </div>
+                <div class="divider"></div>
+                <div class="section">
+                    <h5><strong>Case</strong></h5>
+                    <p id="case"> <strong>Type:</strong> {{case}}</p>
+                    <p id="casePrice"> <strong>Price: </strong> {{casePrice}}$</p>
+                </div>
+                <div class="divider"></div>
+                <div class="section">
+                    <h5><strong>Charger</strong></h5>
+                    <p id="charger"> <strong>Chargers:</strong> {{chargerCar}}, {{chargerHome}}</p>
+                    <p id="chargerPrice"> <strong>Car Charger Price:</strong> {{chargerCarPrice}}$, <strong>Home Charger Price:</strong> {{chargerHomePrice}}$</p>
+                </div>
+                <div class="divider"></div>
+                <div class="section">
+                    <h4 id="totalPrice"><strong>Total Price: </strong> {{message}}$</h4>
+                    <br>
+                    <div class="divider"></div>
+                    <h5 id="discountedPrice"> <strong>Discounted Price:</strong> {{discount}}$  <i> <small> ({{discount_percent}}% off) </small></i></h5>
+                    <h6 id="discountSaving">You are saving {{saving}}$</h6>
+                    <br>
+                    <strong style="text-transform: uppercase; color: orange">** <i> +10% off</i> the total price for every additional device purchased**</strong>
+                </div>
+            </div>
+        </div>
+        <a class="btn-floating btn-large waves-effect waves-light orange" href="index.html"><i class="material-icons">arrow_back</i></a>
+        <br>
+        <br>
+        <br>
+    </div>
+</body>
+<script src="output.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDuOjaI6h81Hf16oeI9oXzFHQK7opMXWGs",
+    authDomain: "aneesh-igcse.firebaseapp.com",
+    databaseURL: "https://aneesh-igcse.firebaseio.com",
+    projectId: "aneesh-igcse",
+    storageBucket: "aneesh-igcse.appspot.com",
+    messagingSenderId: "687968873715",
+    appId: "1:687968873715:web:54d3b51fb8dbfe1653db86",
+    measurementId: "G-D82XJY10TD"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+</html>
