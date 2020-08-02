@@ -1,6 +1,6 @@
 # Computer-Science-IGCSE-Task (Pre-Release-Material)
 This is my solution to the Computer Science IGCSE Task, Pre Release Material.
 
-Here is the link to my solution in action: https://aneesh-igcse.web.app/
+My solution in action: https://aneesh-igcse.web.app/
 
-Here is the link to the Task instruction: https://1drv.ms/b/s!An3OLJ7n0CjEk91J3NlIjL6wR63RxQ?e=cTxxtM
+The Task instruction: https://1drv.ms/b/s!An3OLJ7n0CjEk91J3NlIjL6wR63RxQ?e=cTxxtM
